@@ -4,10 +4,13 @@ public class Agente {
 	
 	private int idAgente;
 	private Pessoa pessoa;
-	private String nome;
-	private String endereco;
 	
 	
+	public Agente(int idAgente, Pessoa pessoa) {
+		this.idAgente = idAgente;
+		this.pessoa = pessoa;
+	}
+		
 	
 	public int getIdAgente() {
 		return idAgente;
@@ -28,7 +31,9 @@ public class Agente {
 		pessoa.setEndereco(endereco);
 	}
 	
-	
+	public String toString() {
+		return this.idAgente+" "+this.getNome()+" "+ this.getEndereco();
+	}
 	
 	
 	
