@@ -7,4 +7,7 @@ Repositrório  das atividades realizadas na disciplina de MAP 18.2 (Métodos Ava
 
 Este Repositorio foi criado para o armazenamento das atividades da disciplina de MAP do cursos de Sistemas de Informação do  5º periodo.
 
-#-------
+# Professor 
+
+## Bruno Dias
+#### Gerente de Projetos & Professor.
