@@ -9,9 +9,12 @@ public class Conection {
 	
 	private static  Conection conexao = null;
 	private static  Conection stm = null;
-	private static String url = "localhost:5050/map";
+	private static String url= "localhost:5050/map";
 	private static String username = "cassio";
-	private static String password  = "999999999999";
+	private static String password = "999999999999";
+	
+	
+	private Conection() {}
 	
 	
 	private static Conection getConexao() {
