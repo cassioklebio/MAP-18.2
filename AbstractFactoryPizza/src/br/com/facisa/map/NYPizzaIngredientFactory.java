@@ -5,37 +5,44 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 	
 	public Dough createDough() {
 		
-		return new thickCrustDough;
+		return new thickCrustDough();
 	}
 
 	@Override
 	public Sauce createSauce() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return new PlumTomateDough()  ;
 	}
 
 	@Override
 	public Cheese createCheese() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return new Mozzarells();
 	}
 
 	@Override
 	public Veggies[] createVeggies() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		Veggies veggies[] = { 
+				new BlackOlives(),
+                new Spinach(),
+                new Eggplant() };
+       return veggies;
+}
+	
+	
 
 	@Override
 	public Pepperoni createPepperoni() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return null ;
 	}
 
 	@Override
 	public Clams createClam() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return new FrozamClams();
 	}
+	
+		
 
 }
