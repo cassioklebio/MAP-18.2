@@ -1,12 +1,23 @@
 
-# MAP-18.2
+# Atividade Builder
 
 ## 
-Repositrório  das atividades realizadas na disciplina de MAP 18.2 (Métodos Avançados de Programação - 18.2) do curso de Sistemas de informação na Faculdade de Ciências Sociais Aplicadas - Facisa.
 
-# Objetivos
+# Builder
 
-Este Repositorio foi criado para o armazenamento das atividades da disciplina de MAP do cursos de Sistemas de Informação do  5º periodo.
+Permite a separação do objeto de sua representação.
+
+# Pontos Positivos
+
+Encapsula o objeto de sua representação;
+
+# Pontos Negativos
+
+Para cada instancia necessita de um concrete builder.
+
+# Comparação com o Abstract Factory 
+
+O builder cria objetos complexos e o Abstract Factory cria familias de objetos
 
 # Professor 
 
