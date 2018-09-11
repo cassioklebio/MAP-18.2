@@ -4,20 +4,17 @@ public class ChicagoPizzaIngredient implements PizzaIngredientBuilder {
 
 	@Override
 	public Dough createDough() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ThinCrustDough();
 	}
 
 	@Override
 	public Sauce createSauce() {
-		// TODO Auto-generated method stub
-		return null;
+		return new MarinaraSauce();
 	}
 
 	@Override
 	public Cheese createCheese() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ReggianoCheese();
 	}
 
 	@Override
@@ -36,6 +33,9 @@ public class ChicagoPizzaIngredient implements PizzaIngredientBuilder {
 	public Clams createClam() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	public ChicagoPizzaIngredient getPizza() {
+		return getPizza();
 	}
 
 }
