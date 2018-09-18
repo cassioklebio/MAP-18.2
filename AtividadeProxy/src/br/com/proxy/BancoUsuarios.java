@@ -1,14 +1,20 @@
 package br.com.proxy;
 
-public interface BancoUsuarios {
+public class BancoUsuarios {
 	
-	
-	
+	private int quantidadeDeUsuarios;
+	private int usuariosConectados;
 
-	public String getNumeroDeUsuarios();
+	public BancoUsuarios() {
+		quantidadeDeUsuarios = (int) (Math.random() * 100);
+		usuariosConectados = (int) (Math.random() * 10);
+	}
 
-	public String getUsuariosConectados();
-	
-	
-		
+	public Integer getNumeroDeUsuarios() {
+		return quantidadeDeUsuarios;
+	}
+
+	public Object getUsuariosConectados() {
+		return new String("Usuários conectados: " + usuariosConectados);
+	}
 }

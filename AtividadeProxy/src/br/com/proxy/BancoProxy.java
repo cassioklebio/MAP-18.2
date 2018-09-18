@@ -1,32 +1,31 @@
 package br.com.proxy;
 
-public class BancoProxy implements BancoUsuarios  {
+public class BancoProxy implements InterfaceBanco  {
 	
 	protected String usuario, senha;
-	private int quantidadeDeUsuarios;
-	private int usuariosConectados;
+	private BancoUsuarios banco;
+	
 
 
-	public BancoProxy(String usuario, String senha, int quantidadeDeUsuarios,int usuariosConectados) {
+	public BancoProxy(String usuario, String senha) {
 		this.usuario = usuario;
 		this.senha = senha;
-		this.quantidadeDeUsuarios = (int) (Math.random() * 100);
-		this.usuariosConectados = (int) (Math.random() * 10);
+		
 		
 	}
 
-	@Override
-	public String getNumeroDeUsuarios() {
+
+	public int getNumeroDeUsuarios() {
 		if (temPermissaoDeAcesso()) {
-			return new String("Total de usuários: " + quantidadeDeUsuarios)+ getNumeroDeUsuarios();
+			return banco.getNumeroDeUsuarios();
 		}
-		return null;
+		return (Integer) null;
 	}
 
-	@Override
+	
 	public String getUsuariosConectados() {
 		if (temPermissaoDeAcesso()) {
-			return  new String("Usuários conectados: " + usuariosConectados)+ getUsuariosConectados();
+			return  (String) banco.getUsuariosConectados();
 		}
 		return null;
 	}
